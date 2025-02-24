@@ -1747,4 +1747,32 @@ function Test-VirtualNetworkExpressRouteGatewayForDifferentCustomerBlockTrafficP
         # Cleanup
         Clean-ResourceGroup $rgname
     }
+
+    <#
+.SYNOPSIS
+Virtual network gateway traffic block preferences that may be configured by customers
+#>
+function Test-HighBandwidthVpnGatewayCreation
+{
+    # Setup
+    $rgname = Get-ResourceGroupName
+    # return
+
+    $rname = Get-ResourceName
+    $vnetName = Get-ResourceName
+    $publicIpName = Get-ResourceName
+    $vnetGatewayConfigName = Get-ResourceName
+    $rglocation = "centraluseuap"
+    $resourceTypeParent = "Microsoft.Network/virtualNetworkGateways"
+    $location = "centraluseuap"
+
+    try 
+    {
+
+    }
+    finally
+    {
+        # Cleanup
+        Clean-ResourceGroup $rgname
+    }
 } 

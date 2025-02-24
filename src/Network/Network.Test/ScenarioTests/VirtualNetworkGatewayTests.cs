@@ -195,5 +195,13 @@ namespace Commands.Network.Test.ScenarioTests
         {
             TestRunner.RunTestScript("Test-VirtualNetworkExpressRouteGatewayForDifferentCustomerBlockTrafficPreferences");
         }
+
+        [Fact]
+        [Trait(Category.AcceptanceType, Category.CheckIn)]
+        [Trait(Category.Owner, NrpTeamAlias.brooklynft_subset2)]
+        public void TestHighBandwidthVpnGatewayCreation()
+        {
+            TestRunner.RunTestScript("Test-HighBandwidthVpnGateway");
+        }
     }
 }
